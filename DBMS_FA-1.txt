@@ -414,6 +414,7 @@ mysql> SELECT name, salary
 +---------------------+-----------+
 2 rows in set (0.01 sec)
 
+4. Retrieve movie titles and the names of the studios that produced them:
 mysql> SELECT Movie.title, Studio.name AS studio_name, Director.name AS director_name 
     -> FROM Movie 
     -> JOIN Studio ON Movie.studio_id = Studio.studio_id 
